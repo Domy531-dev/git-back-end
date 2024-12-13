@@ -1,15 +1,15 @@
 const express = require("express");
 const cors = require('cors');  // Importa o módulo cors
 const bodyParser = require("body-parser");
-const produtosRoutes = require("./routerProdutos.js");
-const usuariosRoutes = require("./routerUsuarios.js");
+const produtosRoutes = require("../routerProdutos.js");
+const usuariosRoutes = require("../routerUsuarios.js");
 
 
 const path = require("path");
 const app = express();
 app.use(cors());
 
-const port = process.env.PORT || 3001;  // Porta fornecida pelo host ou 3000
+const port = process.env.PORT || 2710;  // Porta fornecida pelo host ou 3000
 const host = '0.0.0.0';  // Aceitar conexões de qualquer lugar
 
 app.use(bodyParser.json());
